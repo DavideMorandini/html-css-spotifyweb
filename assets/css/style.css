@@ -86,11 +86,13 @@ div.container_main {
     border: 1px solid black;
     width: calc(100vw - 300px);
     height: calc(100vh - 100px);
-    /* overflow: ; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #141922;
 }
 
 div.banner_up {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     width: auto;
     height: 100px;
     background-color: #080b12; 
@@ -101,7 +103,7 @@ div.banner_up {
 }
 
 div.btn_upgrade {
-    border: 1px solid black;
+    border: 1px solid;
     width: 20%;
     height: auto;
     padding: 10px;
@@ -115,17 +117,18 @@ div.btn_upgrade {
 }
 
 div.main_nav {
-    border: 1px solid black;
-    height: 100px; /* auto */
+    /* border: 1px solid pink; */
+    height: auto; 
+    margin: 20px 0px 40px 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .main_ul {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
-    height: 50px; /* auto */
+    height: auto; 
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -133,17 +136,31 @@ div.main_nav {
 }
 
 .main_li {
-    border: 1px solid violet;
+    /* border: 1px solid violet; */
     width: 10%; 
-    height: 30px; /* auto */
+    height: auto; 
     list-style-type: none;
     margin: 0px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
+a {
+    color: #77797e;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+/* First Section and Second Section */
 div.row_film {
     border: 1px solid red;
     width: 100%; /* auto */
-    height: 350px; /* auto */
+    height: auto; 
     display: flex;
     flex-direction: row;
 }
@@ -151,28 +168,51 @@ div.row_film {
 div.col_main {
     border: 1px solid blue;
     width: calc(100% / 6);
-    height: 330px; /* auto */
+    height: auto; 
     margin: 0px 5px;
 }
 
-div.box_film {
+div.box_album {
     border: 3px solid green;
     width: 200px;
     height: 200px; /* auto */
     margin: 0 auto;
 }
 
-.album_film {
+.album {
     max-width: 100%;
     object-fit: cover;
 }
 
-
-div.info_film {
-    border: 1px solid violet;
+div.info_album {
+    /* border: 1px solid violet; */
     width: auto;
     height: auto;
     text-align: center;
+}
+
+h2.title_category, h3.principal_title {
+    color: white;
+}
+
+h2.title_category {
+    border: 1px solid yellow;
+    margin: 30px 0px;
+}
+
+h3.principal_title {
+    /* border: 1px solid red; */
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+h5.subtitle {
+    color: #787a7f;
+    font-size: 12px;
+}
+
+.album_circle {
+    border-radius: 50%;
 }
 
 
