@@ -7,7 +7,8 @@
 /* metti hright auto solo dove serve
 metti width auto solo dove serve
 sostituisce i rem con i px
-togli i border */
+togli i border
+fai respirare il codice HTML */
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -80,19 +81,24 @@ div.box_icon {
     /* border: 1px solid yellow; */
     max-width: 100%;
     object-fit: cover;
-    color: #6e6e6e;
+    color: #a3a3a3;
 }
 
 a.to_do {
     /* border: 1px solid green; */
     text-transform: none;
-    color: #6e6e6e;
+    color: #a3a3a3;
     margin-left: 5px;
 }
 
-a.special {
+a.home {
     color: white;
 }
+
+a.to_do:hover, .icon:hover {
+    color: white;
+}
+
 
 
 
@@ -141,7 +147,10 @@ a.name_playlist {
     text-transform: none;
 }
 
-
+.fa-square-plus:hover, a.add_playlist:hover, 
+a.name_playlist:hover {
+    color: white;
+}
 
 
 
@@ -188,6 +197,10 @@ div.box_app {
 
 a.app {
     text-transform: none;
+}
+
+a.app:hover {
+    color: white;
 }
 
 div.john_doe_profile {
@@ -323,7 +336,7 @@ div.col_main {
 }
 
 div.box_album {
-    /* border: 3px solid green; */
+    border: 3px solid green;
     width: 200px;
     height: auto;
     margin: 0 auto;
