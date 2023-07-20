@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html-css-spotifyweb</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -27,14 +28,93 @@
                                 <img class="logo" src="./assets/img/logo.svg" alt="logo">
                             </div>
 
+                            <ul class="nav_bar_left">
+                                <li class="left_list_item">
+                                    <div class="box_icon">
+                                        <img class="icon" src="./assets/img/home.svg" alt="home">
+                                    </div>
+                                  
+                                    <a class="to_do special" href="#">Home</a>
+                                </li>
+
+                                <li class="left_list_item">
+                                    <div class="box_icon">
+                                        <img class="icon" src="./assets/img/search.svg" alt="search">
+                                    </div>
+
+                                    <a class="to_do" href="#">Cerca</a>
+                                </li>
+
+                                <li class="left_list_item">
+                                    <div class="box_icon">
+                                        <img class="icon" src="./assets/img/libreria.svg" alt="library">
+                                    </div>
+
+                                    <a class="to_do" href="#">La tua libreria</a>
+                                </li>
+                            </ul>
                         </div>
 
                         <!-- Column nav middle -->
                         <div class="col_nav col_nav_middle"> 
+                            <h4 class="title_playlist">Playlist</h4>
+
+                            <div class="plus">
+                                <i class="fa-solid fa-square-plus"></i>
+                                <a class="add_playlist" href="#">Crea Playlist</a>
+                            </div>
+
+                            <ul>
+                                <li class="left_list_item">
+                                    <a class="name_playlist" href="#">Nome Playlist</a>
+                                </li>
+                                
+                                <li class="left_list_item">
+                                    <a class="name_playlist" href="#">Nome Playlist</a>
+                                </li>
+                                
+                                <li class="left_list_item">
+                                    <a class="name_playlist" href="#">Nome Playlist</a>
+                                </li>
+
+                                <li class="left_list_item">
+                                    <a class="name_playlist" href="#">Nome Playlist</a>
+                                </li>
+
+                                <li class="left_list_item">
+                                    <a class="name_playlist" href="#">Nome Playlist</a>
+                                </li>
+
+                                <li class="left_list_item">
+                                    <a class="name_playlist" href="#">Nome Playlist</a>
+                                </li>
+
+                                <li class="left_list_item">
+                                    <a class="name_playlist" href="#">Nome Playlist</a>
+                                </li>
+                            </ul>
                         </div>
 
                         <!-- Column nav down -->
                         <div class="col_nav col_nav_down">
+
+                            <div class="you_can_do">
+                                <div class="box_download">
+                                    <img class="arrow_down" src="./assets/img/download.svg" alt="download">
+                                </div>
+
+                                <div class="box_app">
+                                    <a class="app" href="#">Installa app</a>
+                                </div>
+                            </div>
+
+                            <div class="john_doe_profile">
+                                <div class="box_profile">
+                                    <img class="profile" src="./assets/img/profile.svg" alt="john doe">
+                                </div>
+
+                                <span>John Doe</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -76,6 +156,7 @@
                     </div>
 
                     <!-- First Section -->
+
                     <h2 class="title_category title_special">Recently played</h2>
 
                     <div class="row_film">
@@ -153,10 +234,11 @@
                     </div>
 
                     <!-- Second Section -->
+
                     <h2 class="title_category">Creato per John Doe</h2>
-                    
+                       
                     <h6 class="suggestion">Più ascolti, più accurati saranno i suggerimenti.</h6>
-                    
+                       
                     <div class="row_film">
                         <div class="col_main">
                             <div class="box_album">
@@ -205,13 +287,6 @@
                             </div>
                         </div>  
                     </div>
-
-
-
-
-
-
-
                 </div>
             </main>
         </div>

@@ -4,6 +4,11 @@
     box-sizing: 0;
 }
 
+/* metti hright auto solo dove serve
+metti width auto solo dove serve
+sostituisce i rem con i px
+togli i border */
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
@@ -13,56 +18,127 @@ div.container_top {
     flex-direction: row;
 }
 
+
+
+
 /* side bar */
 div.container_nav {
-    border: 1px solid black;
+    /* border: 3px solid orange; */
     width: 300px;
     height: calc(100vh - 100px);
+    background-color: #000000;
+    overflow: auto;
 }
 
 div.row_nav {
-    border: 2px solid red;
-    width: 100%;
-    height: 100%;
+    /* border: 2px solid red; */
+    width: auto;
+    height: 100%; /* non auto */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+/* Column nav up */
 div.col_nav_up {
-    border: 1px solid blue;
-    width: 100%;
-    height: 300px; /* auto */
+    /* border: 3px solid violet; */
+    width: auto;
+    height: auto; /* 300px */
 }
 
 div.box_logo {
-    border: 3px solid green;
+    /* border: 3px solid green; */
     width: auto; 
     height: auto; 
-    padding: 20px 10px;
+    margin: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .logo {
-    border: 1px solid yellow;
+    /* border: 1px solid yellow; */
     max-width: 65%;
     object-fit: cover;
-    filter: invert(1); /* cambia colore in bianco */
 }
 
+.left_list_item {
+    /* border: 1px solid blue; */
+    height: auto;
+    list-style-type: none;
+    margin: 10px 20px 10px 20px;
+}
+
+div.box_icon {
+    /* border: 1px solid red; */
+    width: 12%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon {
+    /* border: 1px solid yellow; */
+    max-width: 100%;
+    object-fit: cover;
+    color: #6e6e6e;
+}
+
+a.to_do {
+    /* border: 1px solid green; */
+    text-transform: none;
+    color: #6e6e6e;
+    margin-left: 5px;
+}
+
+a.special {
+    color: white;
+}
+
+
+
+
+
+/* Column nav middle */
 div.col_nav_middle {
-    border: 1px solid blue;
+    /* border: 2px solid yellow; */
     width: auto;
-    height: 150px; /* auto */
+    height: auto; /* 150px */
     flex-grow: 2;
 }
 
-div.col_nav_down {
-    border: 1px solid blue;
+h4.title_playlist {
+    /* border: 1px solid green; */
+    color: white;
+    text-transform: uppercase;
+    margin: 20px 20px 10px 20px;
+}
+
+div.plus {
+    /* border: 1px solid red; */
     width: auto;
-    height: 150px; /* auto */
+    height: auto;
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fa-square-plus {
+    /* border: 1px solid red; */
+    color: #a3a3a3;
+    font-size: 50px;
+    margin: 0px 10px 0px 0px;
+}
+
+a.add_playlist {
+    text-transform: none;
+    font-size: 15px;
+}
+
+a.name_playlist {
+    /* border: 1px solid green; */
+    text-transform: none;
 }
 
 
@@ -70,12 +146,80 @@ div.col_nav_down {
 
 
 
+/* Column nav down */
+div.col_nav_down {
+    /* border: 1px solid blue; */
+    width: auto;
+    height: auto; /* 150px */
+}
 
+div.you_can_do {
+    border: 1px solid;
+    width: auto;
+    height: auto;
+    margin: 0px 20px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: #6c6c6c;
+    display: flex;
+    flex-direction: row;
+}
 
+div.box_download {
+    /* border: 1px solid red; */
+    width: 7%;
+    height: auto;
+    margin-bottom: 5px;
+}
 
+.arrow_down {
+    /* border: 1px solid yellow; */
+    max-width: 100%;
+    object-fit: cover;
+}
 
+div.box_app {
+    /* border: 1px solid green; */
+    width: auto;
+    height: auto;
+    margin-left: 15px;
+}
 
+a.app {
+    text-transform: none;
+}
 
+div.john_doe_profile {
+    /* border: 1px solid blue; */
+    width: auto;
+    height: auto;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+div.box_profile {
+    /* border: 1px solid red; */
+    width: 12%;
+    height: auto;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.profile {
+    /* border: 1px solid yellow; */
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #808080;
+}
+
+span {
+    color: white;
+    font-weight: bold;
+}
 
 
 
@@ -95,11 +239,13 @@ div.banner_up {
     /* border: 1px solid yellow; */
     width: auto;
     height: 100px;
-    background-color: #080b12; 
+    background-color: rgb(8, 11, 18, 0.5); 
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 
 div.btn_upgrade {
@@ -139,6 +285,7 @@ div.main_nav {
     /* border: 1px solid violet; */
     width: 10%; 
     height: auto; 
+    padding: 10px 20px;
     list-style-type: none;
     margin: 0px 5px;
     display: flex;
@@ -156,6 +303,9 @@ a {
 }
 
 
+
+
+
 /* First Section and Second Section */
 div.row_film {
     /* border: 1px solid red; */
@@ -167,15 +317,15 @@ div.row_film {
 
 div.col_main {
     /* border: 1px solid blue; */
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 20px);
     height: auto; 
-    margin: 0px 5px;
+    margin: 0px 10px;
 }
 
 div.box_album {
     /* border: 3px solid green; */
     width: 200px;
-    height: 200px; /* auto */
+    height: auto;
     margin: 0 auto;
 }
 
@@ -197,7 +347,7 @@ h2.title_category, h3.principal_title {
 
 h2.title_category {
     /* border: 1px solid yellow; */
-    margin: 20px 0px 10px 0px;
+    margin: 20px 0px 10px 20px;
 }
 
 h2.title_special {
@@ -218,31 +368,12 @@ h5.subtitle {
 h6.suggestion{
     color: #787a7f;
     font-size: 12px;
-    margin-bottom: 30px;
+    margin: 0px 0px 30px 20px;
 }
 
 .album_circle {
     border-radius: 50%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
