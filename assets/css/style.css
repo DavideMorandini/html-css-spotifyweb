@@ -95,13 +95,9 @@ a.home {
     color: white;
 }
 
-a.to_do:hover, .icon:hover {
+a:hover {
     color: white;
 }
-
-
-
-
 
 
 /* Column nav middle */
@@ -147,8 +143,7 @@ a.name_playlist {
     text-transform: none;
 }
 
-.fa-square-plus:hover, a.add_playlist:hover, 
-a.name_playlist:hover {
+.fa-square-plus:hover {
     color: white;
 }
 
@@ -197,10 +192,6 @@ div.box_app {
 
 a.app {
     text-transform: none;
-}
-
-a.app:hover {
-    color: white;
 }
 
 div.john_doe_profile {
@@ -318,7 +309,6 @@ a {
 
 
 
-
 /* First Section and Second Section */
 div.row_film {
     /* border: 1px solid red; */
@@ -329,7 +319,7 @@ div.row_film {
 }
 
 div.col_main {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     width: calc(100% / 6 - 20px);
     height: auto; 
     margin: 0px 10px;
@@ -340,6 +330,7 @@ div.box_album {
     width: 200px;
     height: auto;
     margin: 0 auto;
+    position: relative;
 }
 
 .album {
