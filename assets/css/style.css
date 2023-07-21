@@ -337,7 +337,7 @@ div.green_bar {
 
 /* First Section and Second Section */
 div.row_film {
-    /* border: 1px solid red; */
+    border: 1px solid red;
     width: 100%;
     height: auto; 
     display: flex;
@@ -345,15 +345,15 @@ div.row_film {
 }
 
 div.col_main {
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     width: calc(100% / 6 - 1.25rem);
     height: auto; 
     margin: 0rem 0.625rem;
 }
 
 div.box_album {
-    /* border: 3px solid green; */
-    width: 12.5rem;
+    border: 3px solid green;
+    width: auto;
     height: auto;
     margin: 0 auto;
     position: relative;
@@ -745,7 +745,6 @@ span.inside_bar_right:hover span.circle_right {
 
 
 
-
 /* Media Query */
 @media screen and (max-width: 1200px) {
     div.main_nav {
@@ -772,6 +771,7 @@ span.inside_bar_right:hover span.circle_right {
         flex-wrap: wrap;
     }
 
+    
 }   
 
 
