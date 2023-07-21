@@ -778,7 +778,7 @@ span.inside_bar_right:hover span.circle_right {
     }
 }   
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 639px) {
     div.main_nav {
         flex-wrap: wrap; 
     }
@@ -802,36 +802,49 @@ span.inside_bar_right:hover span.circle_right {
     }
 }   
 
-div.container_nav {
-    border: 3px solid orange;
-    width: 300px;
-}
-
-div.container_main {
-    border: 1px solid red;
-    width: calc(100vw - 300px);
-}
-
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 552px) {
     div.container_nav {
-       
+        width: 50px;
     }
 
     div.container_main {
-        
+        width: calc(100vw - 50px);
     }
 
+    div.box_logo {
+        width: auto;
+        margin: 0rem;
+        text-align: center;
+    }
 
     .logo_hidden {
         display: block;
+        max-width: 60%;
+        object-fit: cover;
+        margin: 0.5rem auto;
     }
 
     .logo {
         display: none;
     }
 
+    .left_list_item {
+        margin: 0rem
+    }
+
     .to_do {
         display: none;
+    }
+
+    div.box_icon {
+        width: 100%;
+        text-align: center;
+    }
+
+    .icon {
+        max-width: 60%;
+        object-fit: cover;
+        margin: 0.1rem 0rem; 
     }
 
     div.col_nav_middle {
@@ -839,11 +852,47 @@ div.container_main {
     }
 
     div.you_can_do {
+        /* border: 1px solid red; */
+        width: 90%;
+        margin: 0 auto;
         border-bottom-color: transparent;
+    }
+
+    div.box_download {
+        /* border: 1px solid blue; */
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 0.625rem;
+    }
+
+    .arrow_down {
+        /* border: 1px solid yellow;  */
+        max-width: 40%;
+        object-fit: cover;
+    }
+
+    div.box_app {
+        margin-left: 0rem;
     }
 
     a.app {
         display: none;
+    }
+
+    div.john_doe_profile {
+        /* border: 1px solid blue; */
+        width: auto;
+        height: auto;
+        margin: 0rem;
+    }
+    
+    div.box_profile {
+        /* border: 1px solid red; */
+        width: 80%;
+        height: auto;
+        display: inline-block;
+        margin: 0.625rem auto;
     }
 
     span.user {
