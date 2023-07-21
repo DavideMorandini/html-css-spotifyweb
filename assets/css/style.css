@@ -50,6 +50,12 @@ div.box_logo {
     align-items: center;
 }
 
+.logo_hidden {
+    max-width: 15%;
+    object-fit: cover;
+    display: none;
+}
+
 .logo {
     /* border: 1px solid yellow; */
     max-width: 65%;
@@ -335,10 +341,12 @@ div.green_bar {
 
 
 
+
+
 /* First Section and Second Section */
 div.row_film {
     border: 1px solid red;
-    width: 100%;
+    width: auto;
     height: auto; 
     display: flex;
     flex-direction: row;
@@ -764,14 +772,82 @@ span.inside_bar_right:hover span.circle_right {
     }
 
     div.col_main {
+        width: calc(100% / 5);
+        margin-bottom: 0.625rem;
         flex-wrap: wrap;
     }
-
-    div.box_play_me {
-        flex-wrap: wrap;
-    }
-
-    
 }   
 
+@media screen and (max-width: 768px) {
+    div.main_nav {
+        flex-wrap: wrap; 
+    }
+
+    .main_ul {
+        flex-wrap: wrap;
+    }
+    
+    .main_li {
+        flex-wrap: wrap;
+    }
+
+    div.row_film {
+        flex-wrap: wrap;
+    }
+
+    div.col_main {
+        width: calc(100% / 3);
+        margin-bottom: 0.625rem;
+        flex-wrap: wrap;
+    }
+}   
+
+div.container_nav {
+    border: 3px solid orange;
+    width: 300px;
+}
+
+div.container_main {
+    border: 1px solid red;
+    width: calc(100vw - 300px);
+}
+
+@media screen and (max-width: 475px) {
+    div.container_nav {
+       
+    }
+
+    div.container_main {
+        
+    }
+
+
+    .logo_hidden {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .to_do {
+        display: none;
+    }
+
+    div.col_nav_middle {
+        display: none;
+    }
+
+    div.you_can_do {
+        border-bottom-color: transparent;
+    }
+
+    a.app {
+        display: none;
+    }
+
+    span.user {
+        display: none;
+    }
+}   
 
