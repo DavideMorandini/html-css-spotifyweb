@@ -743,6 +743,9 @@ span.inside_bar_right:hover span.circle_right {
 
 
 
+
+
+
 /* Media Query */
 @media screen and (max-width: 1200px) {
     div.main_nav {
@@ -757,6 +760,17 @@ span.inside_bar_right:hover span.circle_right {
         flex-wrap: wrap;
     }
 
+    div.row_film {
+        flex-wrap: wrap;
+    }
+
+    div.col_main {
+        flex-wrap: wrap;
+    }
+
+    div.box_play_me {
+        flex-wrap: wrap;
+    }
 
 }   
 
