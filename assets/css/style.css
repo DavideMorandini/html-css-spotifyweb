@@ -261,6 +261,7 @@ div.banner_up {
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 div.btn_upgrade {
@@ -619,11 +620,13 @@ span.circle {
     top: 50%;
     right: 0;
     transform: translate(0%, -50%);
+    display: none;
 }
 
-span.inside_bar_center:hover {
+span.inside_bar_center:hover span.circle {
     background-color: greenyellow;
     cursor: pointer;
+    display: block;
 }
 
 span.time {
