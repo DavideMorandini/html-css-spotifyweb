@@ -63,7 +63,8 @@ div.box_logo {
 }
 
 .left_list_item {
-    /* border: 1px solid blue; */
+    /* border: 3px solid blue; */
+    width: auto;
     height: auto;
     list-style-type: none;
     margin: 10px 20px 10px 20px;
@@ -323,6 +324,18 @@ a {
     font-weight: bold;
 }
 
+.evidenza {
+    display: flex;
+    flex-direction: column;
+}
+
+div.green_bar {
+    width: 15%;
+    height: auto;
+    padding: 1px 5px;
+    margin-top: 2px;
+    background-color: greenyellow;
+}
 
 
 
@@ -352,24 +365,29 @@ div.box_album {
 
 div.box_play_me {
     /* border: 3px solid green; */
-    /* width: 100%;
-    height: auto; */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: none;
+    position: relative;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    display: none;
-}
-
-div.box_album:hover div.box_play_me {
-    display: block;
-    cursor: pointer;
-    /* background-color: rgb(0, 0, 0, 0.5); */
 }
 
 .play_me {
     color: white;
     font-size: 90px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div.box_album:hover div.box_play_me {
+    display: block;
+    cursor: pointer;
 }
 
 .album {
@@ -609,7 +627,7 @@ span.inside_bar_center {
     left: 0;
 }
 
-span.circle {
+span.circle_center {
     /* border: 1px solid violet; */
     width: auto;
     height: auto;
@@ -623,9 +641,13 @@ span.circle {
     display: none;
 }
 
-span.inside_bar_center:hover span.circle {
+span.outside_bar_center:hover
+span.inside_bar_center {
     background-color: greenyellow;
     cursor: pointer;
+}
+
+span.inside_bar_center:hover span.circle_center {
     display: block;
 }
 
@@ -671,9 +693,8 @@ span.option {
     margin: 0px 10px;
 }
 
-span.outside_bar {
+span.outside_bar_right {
     /* border: 1px solid blue; */
-    display: inline-block;
     width: 50%;
     height: auto; 
     background-color: #5a5a5a;
@@ -687,18 +708,42 @@ span.outside_bar {
     position: relative;
 }
 
-span.inside_bar {
+span.inside_bar_right {
     /* border: 1px solid pink; */
     width: 10%;
     height: auto; 
     padding: 2px 10px;
     background-color: #c1c1c1;
     border-radius: 50px;
+    position: relative;
     position: absolute;
     top: 0;
     left: 0;
 }
 
+span.circle_right {
+    /* border: 1px solid violet; */
+    width: auto;
+    height: auto;
+    background-color: #c1c1c1;
+    padding: 5px 5px;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    display: none;
+}
+
+span.outside_bar_right:hover
+span.inside_bar_right {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+span.inside_bar_right:hover span.circle_right {
+    display: block;
+}
 
 
 
