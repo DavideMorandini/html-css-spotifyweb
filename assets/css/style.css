@@ -285,7 +285,7 @@ div.btn_upgrade:hover {
 }
 
 div.main_nav {
-    border: 1px solid pink;
+    /* border: 1px solid pink; */
     width: auto;
     height: auto; 
     margin: 1.25rem 0rem 2.5rem 0rem;
@@ -296,7 +296,7 @@ div.main_nav {
 }
 
 .main_ul {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: auto;
     height: auto; 
     display: flex;
@@ -306,7 +306,7 @@ div.main_nav {
 }
 
 .main_li {
-    border: 1px solid violet;
+    /* border: 1px solid violet; */
     width: auto; 
     height: auto; 
     padding: 0.625rem 1.25rem;
@@ -345,7 +345,7 @@ div.green_bar {
 
 /* First Section and Second Section */
 div.row_film {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: auto;
     height: auto; 
     display: flex;
@@ -353,14 +353,14 @@ div.row_film {
 }
 
 div.col_main {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: calc(100% / 6 - 1.25rem);
     height: auto; 
     margin: 0rem 0.625rem;
 }
 
 div.box_album {
-    border: 3px solid green;
+    /* border: 3px solid green; */
     width: auto;
     height: auto;
     margin: 0 auto;
@@ -665,7 +665,6 @@ span.time {
 
 
 
-
 /* Column footer right */
 div.col_footer_right {
     justify-content: flex-end;
@@ -753,6 +752,7 @@ span.inside_bar_right:hover span.circle_right {
 
 
 
+
 /* Media Query */
 @media screen and (max-width: 1200px) {
     div.main_nav {
@@ -799,6 +799,63 @@ span.inside_bar_right:hover span.circle_right {
         width: calc(100% / 3);
         margin-bottom: 0.625rem;
         flex-wrap: wrap;
+    }
+
+    div.sub_col_footer_left {
+        min-width: 20%;
+    }
+
+    div.box_sinister {
+        min-width: 30%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .sinister_album {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    div.plural_choice {
+        margin-left: -60px;
+    }
+
+    div.sub_col_footer_center {
+        min-width: 20%;
+    }
+
+    .last_symbols {
+        margin: 0rem 0.2rem;
+    }
+    
+    span.outside_bar_center {
+        padding: 0.1rem 0.5rem;
+    }
+    
+    span.inside_bar_center {
+        width: 10%;
+        padding: 0.1rem 0.5rem;
+    }
+
+    div.sub_col_footer_right {
+        min-width: 20%;
+    }
+
+    div.functions {
+        min-width: 20%;
+    }
+
+    span.option {
+        color: white;
+        margin: 0rem 0.1rem;
+    }
+    
+    span.outside_bar_right {
+        width: 10%;
+        padding: 0.1rem 3rem;
+        margin-left: 0.5rem;
     }
 }   
 
@@ -852,14 +909,12 @@ span.inside_bar_right:hover span.circle_right {
     }
 
     div.you_can_do {
-        /* border: 1px solid red; */
         width: 90%;
         margin: 0 auto;
         border-bottom-color: transparent;
     }
 
     div.box_download {
-        /* border: 1px solid blue; */
         width: 100%;
         height: auto;
         text-align: center;
@@ -867,7 +922,6 @@ span.inside_bar_right:hover span.circle_right {
     }
 
     .arrow_down {
-        /* border: 1px solid yellow;  */
         max-width: 40%;
         object-fit: cover;
     }
@@ -881,14 +935,12 @@ span.inside_bar_right:hover span.circle_right {
     }
 
     div.john_doe_profile {
-        /* border: 1px solid blue; */
         width: auto;
         height: auto;
         margin: 0rem;
     }
     
     div.box_profile {
-        /* border: 1px solid red; */
         width: 80%;
         height: auto;
         display: inline-block;
@@ -898,5 +950,6 @@ span.inside_bar_right:hover span.circle_right {
     span.user {
         display: none;
     }
+
 }   
 
