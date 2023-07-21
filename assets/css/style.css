@@ -279,17 +279,19 @@ div.btn_upgrade:hover {
 }
 
 div.main_nav {
-    /* border: 1px solid pink; */
+    border: 1px solid pink;
+    width: auto;
     height: auto; 
     margin: 1.25rem 0rem 2.5rem 0rem;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
 .main_ul {
-    /* border: 1px solid red; */
-    width: 100%;
+    border: 1px solid red;
+    width: auto;
     height: auto; 
     display: flex;
     flex-direction: row;
@@ -298,8 +300,8 @@ div.main_nav {
 }
 
 .main_li {
-    /* border: 1px solid violet; */
-    width: 10%; 
+    border: 1px solid violet;
+    width: auto; 
     height: auto; 
     padding: 0.625rem 1.25rem;
     list-style-type: none;
@@ -741,6 +743,21 @@ span.inside_bar_right:hover span.circle_right {
 
 
 
-
 /* Media Query */
+@media screen and (max-width: 1200px) {
+    div.main_nav {
+        flex-wrap: wrap; 
+    }
+
+    .main_ul {
+        flex-wrap: wrap;
+    }
+    
+    .main_li {
+        flex-wrap: wrap;
+    }
+
+
+}   
+
 
